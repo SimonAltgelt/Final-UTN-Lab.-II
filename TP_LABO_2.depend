@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1709422745 source:c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"ArchivoDeportes.h"
+	"ArchivoJugador.h"
+	"ArchivoEquipos.h"
+	"ArchivoTipoDeporte.h"
+	"clsDeportes.h"
+	"clsJugador.h"
+	"clsTipoDeporte.h"
+	"clsEquipos.h"
+	"fecha.h"
+	"funcionesGlobales.h"
+	"reportes.h"
+	"subMenuConfiguracion.h"
+	"subMenuDeportes.h"
+	"subMenuJugadores.h"
+	"subMenuEquipos.h"
+	"subMenuTipoDeporte.h"
+
+1699311291 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\archivodeportes.h
+	"clsDeportes.h"
+
+1696472417 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\clsdeportes.h
+
+1700141208 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\archivojugador.h
+	"clsJugador.h"
+
+1696472627 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\clsjugador.h
+	"fecha.h"
+
+1696472417 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\fecha.h
+
+1698805615 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\archivoequipos.h
+	"clsEquipos.h"
+
+1699526618 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\clsequipos.h
+
+1698809463 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\archivotipodeporte.h
+	"clsTipoDeporte.h"
+
+1699528886 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\clstipodeporte.h
+
+1696988871 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\funcionesglobales.h
+
+1709422726 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\reportes.h
+
+1699528363 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\submenuconfiguracion.h
+
+1698807221 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\submenudeportes.h
+	"clsDeportes.h"
+	"ArchivoDeportes.h"
+	"subMenuDeportes.h"
+
+1696340300 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\submenujugadores.h
+	"clsJugador.h"
+	"ArchivoJugador.h"
+	"subMenuJugadores.h"
+
+1698810128 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\submenuequipos.h
+	"clsEquipos.h"
+	"ArchivoEquipos.h"
+	"subMenuEquipos.h"
+
+1699528905 c:\users\altge\onedrive\escritorio\parcial lab ii\funciona\tp_labo_2\submenutipodeporte.h
+	"clsTipoDeporte.h"
+	"ArchivoTipoDeporte.h"
+	"subMenuTipoDeporte.h"
+
