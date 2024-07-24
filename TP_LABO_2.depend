@@ -71,3 +71,78 @@
 	"ArchivoTipoDeporte.h"
 	"subMenuTipoDeporte.h"
 
+1721306316 source:c:\users\altge\onedrive\desktop\labo ii final\portfolio\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<regex>
+	"ArchivoDeportes.h"
+	"ArchivoJugador.h"
+	"ArchivoEquipos.h"
+	"ArchivoTipoDeporte.h"
+	"clsDeportes.h"
+	"clsJugador.h"
+	"clsTipoDeporte.h"
+	"clsEquipos.h"
+	"fecha.h"
+	"funcionesGlobales.h"
+	"reportes.h"
+	"subMenuConfiguracion.h"
+	"subMenuDeportes.h"
+	"subMenuJugadores.h"
+	"subMenuEquipos.h"
+	"subMenuTipoDeporte.h"
+
+1721261429 c:\users\altge\onedrive\desktop\labo ii final\portfolio\archivodeportes.h
+	"clsDeportes.h"
+
+1721268273 c:\users\altge\onedrive\desktop\labo ii final\portfolio\clsdeportes.h
+
+1721250831 c:\users\altge\onedrive\desktop\labo ii final\portfolio\archivojugador.h
+	"clsJugador.h"
+
+1721268286 c:\users\altge\onedrive\desktop\labo ii final\portfolio\clsjugador.h
+	"fecha.h"
+	<cstring>
+	<iostream>
+
+1714423170 c:\users\altge\onedrive\desktop\labo ii final\portfolio\fecha.h
+
+1721261429 c:\users\altge\onedrive\desktop\labo ii final\portfolio\archivoequipos.h
+	"clsEquipos.h"
+
+1721268273 c:\users\altge\onedrive\desktop\labo ii final\portfolio\clsequipos.h
+
+1721259368 c:\users\altge\onedrive\desktop\labo ii final\portfolio\archivotipodeporte.h
+	"clsTipoDeporte.h"
+
+1721268271 c:\users\altge\onedrive\desktop\labo ii final\portfolio\clstipodeporte.h
+
+1721258144 c:\users\altge\onedrive\desktop\labo ii final\portfolio\funcionesglobales.h
+
+1721843443 c:\users\altge\onedrive\desktop\labo ii final\portfolio\reportes.h
+
+1721268355 c:\users\altge\onedrive\desktop\labo ii final\portfolio\submenuconfiguracion.h
+
+1721268323 c:\users\altge\onedrive\desktop\labo ii final\portfolio\submenudeportes.h
+	"clsDeportes.h"
+	"ArchivoDeportes.h"
+	"subMenuDeportes.h"
+
+1721261689 c:\users\altge\onedrive\desktop\labo ii final\portfolio\submenujugadores.h
+	"clsJugador.h"
+	"ArchivoJugador.h"
+	"subMenuJugadores.h"
+
+1721266978 c:\users\altge\onedrive\desktop\labo ii final\portfolio\submenuequipos.h
+	"clsEquipos.h"
+	"ArchivoEquipos.h"
+	"subMenuEquipos.h"
+
+1721268323 c:\users\altge\onedrive\desktop\labo ii final\portfolio\submenutipodeporte.h
+	"clsTipoDeporte.h"
+	"ArchivoTipoDeporte.h"
+	"subMenuTipoDeporte.h"
+

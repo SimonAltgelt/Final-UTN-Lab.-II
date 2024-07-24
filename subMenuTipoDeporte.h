@@ -17,13 +17,13 @@ void subMenuTipoDeporte(){
     while(true){
         system("cls");
         cout<<"MENU TIPOS DE DEPORTE"<<endl;
-        cout<<"-------------------"<<endl;
+        cout<<"--------------------------------"<<endl;
         cout<<"1) AGREGAR TIPO"<<endl;
         cout<<"2) LISTAR TIPO POR ID" <<endl;
         cout<<"3) LISTAR TODO"<<endl;
         cout<<"4) MODIFICAR NIVEL DE DIFICULTAD"<<endl;
         cout<<"5) ELIMINAR REGISTRO"<<endl;
-        cout<<"----------------------------"<<endl;
+        cout<<"--------------------------------"<<endl;
         cout<<"0) VOLVER AL MENU PRINCIPAL"<<endl;
         cout<<"OPCION: ";
         cin>>opc;
@@ -39,7 +39,8 @@ void subMenuTipoDeporte(){
                 break;
             case 5: eliminarRegistroTipoDeporte();
                 break;
-            case 0:return;
+            case 0:cout<<"Volviendo al menu principal..."<<endl;
+                return;
                 break;
             default:cout<<"OPCION INCORRECTA"<<endl;
                 break;

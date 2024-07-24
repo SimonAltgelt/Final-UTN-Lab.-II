@@ -1,21 +1,20 @@
 #ifndef FUNCIONESGLOBALES_H_INCLUDED
 #define FUNCIONESGLOBALES_H_INCLUDED
 
-int esPrimo();
-int posicionNumeroEnVector();
-int minimoVector();
-void ordenarVector();
-int maximoVector();
-void cargarAleatorio();
-void mostrarVector();
 int contarNumerosRepetidos();
-void ponerCero();
-int sumarVector();
+void cargarAleatorio();
 void copiarVector();
 bool compararVectores();
 void cargarVector();
-int vectorOrdenado();
+int esPrimo();
+void mostrarVector();
 int minimoVector();
+int maximoVector();
+void ordenarVector();
+void ponerCero();
+int posicionNumeroEnVector();
+int sumarVector();
+int vectorOrdenado();
 
 
 int esPrimo (int num){

@@ -17,6 +17,7 @@ class ArchivoDeporte{
     bool modificarRegistro(int pos, Deporte reg);
     int contarRegistros();
     bool copiaSeguridad(const char *nombreCopia);
+    void limpiarArchivo();
 };
 
 
@@ -95,7 +96,7 @@ return false;
 Deporte ArchivoDeporte::leerRegistro(int pos){
     Deporte reg;
     reg.setEstado(false);
-    FILE *p=fopen(nombre,"rb"); // aca va el ROOT.
+    FILE *p=fopen(nombre,"rb");
     if(p==NULL){
         cout<<"ERROR DE ARCHIVO"<<endl;
         return reg;
@@ -155,15 +156,16 @@ bool ArchivoDeporte::copiaSeguridad(const char *nombreCopia) {
             return false;
         }
     }
-
     fclose(origen);
     fclose(destino);
 
     return true;
 }
 
-
-
-
+void ArchivoDeporte::limpiarArchivo(){
+    FILE *p=fopen(nombre, "wb");
+    if(p==NULL){return;}
+    fclose(p);
+}
 
 #endif // ARCHIVODeporte_H_INCLUDED

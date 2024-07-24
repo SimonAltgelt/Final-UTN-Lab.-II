@@ -1,8 +1,9 @@
 #include<iostream>
-#include <cstring>
+#include<cstring>
 #include<cstdlib>
 #include<cstdio>
 #include<ctime>
+#include<regex>
 
 using namespace std;
 
@@ -26,7 +27,6 @@ using namespace std;
 #include "subMenuEquipos.h"
 #include "subMenuTipoDeporte.h"
 
-
 int main(){
     int opc;
     while(true){
@@ -44,7 +44,6 @@ int main(){
         cout<<"OPCION: ";
         cin>>opc;
         system("cls");
-
         switch(opc){
             case 1: subMenuJugadores();
             break;
@@ -54,11 +53,12 @@ int main(){
             break;
             case 4: subMenuTipoDeporte();
             break;
-            case 5: //reportes();
+            case 5: reportes();
             break;
             case 6: subMenuConfiguracion();
             break;
-            case 0: return 0;
+            case 0: cout<<"¡Gracias por usar nuestro programa!"<<endl;
+                 return 0;
             break;
 
             default: cout<<"OPCION INCORRECTA. INGRESAR OPCION NUEVAMENTE ";

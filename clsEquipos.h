@@ -2,6 +2,7 @@
 #define CLSEQUIPOS_H_INCLUDED
 
 int contarRegistrosEquipos();
+void cargarCadena(char *nombre, int tam);
 
 class Equipo{
  private:
@@ -20,9 +21,10 @@ class Equipo{
     //sets().
     void setID(int d){ID=d;}
     void setNombre(const char *n){strcpy(nombre,n);}
+
     bool setNivel(int n){
-        if((n>=1) && (n<=3)) return true;
-        else return false;
+        if((n>=1) && (n<=3)) {{nivel=n;} return true;}
+        else {return false;}
     }
     void setEstado(bool e){estado=e;}
 
@@ -40,7 +42,7 @@ class Equipo{
         ID=++contador;
         cout<<"ID: "<<ID<<endl;
         cout<<"INGRESE EL NOMBRE: ";
-        cin>>nombre;
+        cargarCadena(nombre, 30);
         cout<<"INGRESE EL NIVEL (OPCION DEL 1 AL 3): ";
         cin>>nivel;
         while(setNivel(nivel)==false){

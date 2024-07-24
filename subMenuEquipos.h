@@ -17,7 +17,7 @@ void subMenuEquipos(){
     while(true){
         system("cls");
         cout<<"MENU EQUIPOS "<<endl;
-        cout<<"-------------------"<<endl;
+        cout<<"----------------------------"<<endl;
         cout<<"1) AGREGAR EQUIPO"<<endl;
         cout<<"2) LISTAR EQUIPO POR ID" <<endl;
         cout<<"3) LISTAR TODO"<<endl;
@@ -39,7 +39,8 @@ void subMenuEquipos(){
                 break;
             case 5: eliminarRegistroEquipo();
                 break;
-            case 0:return;
+            case 0:cout<<"Volviendo al menu principal..."<<endl;
+                return;
                 break;
             default:cout<<"OPCION INCORRECTA"<<endl;
                 break;
@@ -51,11 +52,6 @@ void subMenuEquipos(){
 
 
 void agregarEquipo(){
-    /*
-    FILE *p;
-    p=fopen("Equipos.dat","wb");
-    fclose(p);
-    */
     Equipo reg;
     ArchivoEquipos archi("Equipos.dat");
     reg.Cargar();
@@ -67,7 +63,6 @@ void agregarEquipo(){
         cout<<"NO SE PUDO AGREGAR EL REGISTRO."<<endl;
     }
 }
-
 
 
 void listarEquipoXID(){
@@ -106,7 +101,7 @@ void modificarNombre(){
     else{
         Equipo reg=archi.leerRegistro(pos);
         cout<<"INGRESE EL NUEVO NOMBRE DEL EQUIPO: ";
-        cin>>nuevoNombre;
+        cargarCadena(nuevoNombre,30);
         reg.setNombre(nuevoNombre);
         if(archi.modificarRegistro(pos, reg)){
             cout<<"NOMBRE DEL EQUIPO MODIFICADO EXITOSAMENTE."<<endl;
@@ -125,7 +120,7 @@ bool eliminarRegistroEquipo(){
     cout<<"INGRESE EL ID A BORRAR: ";
     cin>>ID;
 
-    pos=archi.buscarRegistro(ID); //buscarRegistro(int ) devuelve la pos del registro en el archivo.
+    pos=archi.buscarRegistro(ID); //buscarRegistro(int) devuelve la pos del registro en el archivo.
 
     if(pos==-1){
         cout<<"NO EXISTE EL REGISTRO CON ESE CODIGO"<<endl;

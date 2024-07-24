@@ -118,9 +118,9 @@ bool ArchivoTipoDeportes::modificarRegistro(int pos, TipoDeportes reg){
         return false;
     }
     fseek(p,sizeof(TipoDeportes)*pos,0);
-    bool escribio = fwrite(&reg, sizeof reg, 1,p);
-
+    bool escribio=fwrite(&reg, sizeof reg, 1,p);
     fclose(p);
+
 return escribio;
 }
 

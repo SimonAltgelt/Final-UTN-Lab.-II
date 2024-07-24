@@ -2,6 +2,9 @@
 #define CLSJUGADOR_H_INCLUDED
 
 #include "fecha.h"
+#include<cstring>
+#include<iostream>
+void cargarCadena(char *nombre,int tam);
 
 class Jugador{
  private:
@@ -36,18 +39,21 @@ class Jugador{
     }
 
     //sets().
-    void setDNI(int d){DNI=d;}
+    bool setDNI(int d){
+        if(d>0) return true;
+        else return false;
+    }
     void setNombre(const char *n){strcpy(nombre,n);}
     void setApellido(const char *a){strcpy(apellido,a);}
     void setEmail(const char *e){strcpy(email,e);}
     void setTelefono(const char *t){strcpy(telefono,t);}
     bool setClaustro(int c){
-        if(c>=1 && c<=4) return true;
-        else return false;
+        if(c>=1 && c<=4) {{nroClaustro=c;} return true;}
+        else {return false;}
     }
     bool setDeporte(int d){
-        if(d>=1 && d<=10) return true;
-        else return false;
+        if(d>=1 && d<=10) {{nroDeporte=d;} return true;}
+        else {return false;}
     }
     void setEquipo(int e){nroEquipo=e;}
     void setfechaInscripcion(Fecha f){fechaInscripcion=f;}
@@ -75,10 +81,15 @@ class Jugador{
         else{
             DNI=_DNI;
         }
+        while(setDNI(DNI)==false){
+            cout<<"EL DNI TIENE QUE SER MAYOR A 0"<<endl;
+            cout<<"INGRESE EL DNI: ";
+            cin>>DNI;
+        }
         cout<<"INGRESE EL NOMBRE: ";
-        cin>>nombre;
+        cargarCadena(nombre, 30);
         cout<<"INGRESE EL APELLIDO: ";
-        cin>>apellido;
+        cargarCadena(apellido,30);
         cout<<"INGRESE EL EMAIL: ";
         cin>>email;
         cout<<"INGRESE EL TELEFONO: ";
@@ -90,12 +101,11 @@ class Jugador{
             cout<<"NRO DE CLAUSTRO (OPCION DEL 1 AL 4): ";
             cin>>nroClaustro;
         }
-
         cout<<"INGRESE EL NRO DE DEPORTE (OPCION DE 1 AL 10): ";
         cin>>nroDeporte;
         while(setDeporte(nroDeporte)==false){
             cout<<" INGRESE CORRECTAMENTE EL NRO DE CLAUSTRO."<<endl;
-            cout<<"NRO DE DEPORTE (OCPCION DEL 1 AL 10: ";
+            cout<<"NRO DE DEPORTE (OCPCION DEL 1 AL 10): ";
             cin>>nroDeporte;
         }
         ArchivoDeporte archi("Deportes.dat");
@@ -111,7 +121,6 @@ class Jugador{
                 cin>>nroDeporte;
             }
         }
-
         cout<<"INGRESE EL NRO DE EQUIPO: ";
         cin>>nroEquipo;
         cout<<"INGRESE LA FECHA DE INSCRIPCION: "<<endl;

@@ -18,6 +18,7 @@ class ArchivoJugador{
     int contarRegistros();
     bool copiaSeguridad(const char *nombreCopia);
     int cantidadAlumnosPorEquipo(int idEquipo);
+    void limpiarArchivo();
 };
 
 
@@ -176,6 +177,12 @@ int ArchivoJugador::cantidadAlumnosPorEquipo(int idEquipo) {
 return contador;
 }
 
+
+void ArchivoJugador::limpiarArchivo(){
+    FILE *p=fopen(nombre, "wb");
+    if(p==NULL){return;}
+    fclose(p);
+}
 
 
 #endif // ARCHIVOJUGADOR_H_INCLUDED

@@ -22,8 +22,8 @@ class TipoDeportes{
     void setID(int d){ID=d;}
     void setNombre(const char *n){strcpy(nombre,n);}
     bool setDificultad(int t){
-        if((t>=1) && (t<=8)) return true;
-        else return false;
+        if((t>=1) && (t<=8)) {{dificultad=t;} return true;}
+        else {return false;}
     }
     void setEstado(bool e){estado=e;}
 

@@ -2,6 +2,7 @@
 #define CLSDeporte_H_INCLUDED
 
 int contarRegistros();
+void cargarCadena(char *nombre, int tam);
 
 class Deporte{
  private:
@@ -17,19 +18,18 @@ class Deporte{
         tipo=_tipo;
         anio=_anio;
         estado=true;
-
     }
 
     //sets().
     void setID(int d){ID=d;}
     void setNombre(const char *n){strcpy(nombre,n);}
     bool setTipo(int t){
-        if((t>=1) && (t<=21)) return true;
-        else return false;
+        if((t>=1) && (t<=21)){{tipo=t;} return true;}
+        else {return false;}
     }
     bool setAnio(int a){
-        if((a>=1800) && (a<=2023)) return true;
-        else return false;
+        if((a>=1800) && (a<=2024)){{anio=a;} return true;}
+        else {return false;}
     }
     void setEstado(bool e){estado=e;}
 
@@ -45,7 +45,7 @@ class Deporte{
         ID=++contador;
         cout<<"ID: "<<ID<<endl;
         cout<<"INGRESE EL NOMBRE: ";
-        cin>>nombre;
+        cargarCadena(nombre,30);
         cout<<"INGRESE EL TIPO DE DEPORTE (OPCION DEL 1 AL 21): ";
         cin>>tipo;
         while(setTipo(tipo)==false){
@@ -62,7 +62,6 @@ class Deporte{
             }
         estado=true;
     }
-
 
     void Mostrar(){
         if(estado==true){

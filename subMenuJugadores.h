@@ -17,13 +17,13 @@ void subMenuJugadores(){
     while(true){
         system("cls");
         cout<<"MENU JUGADORES "<<endl;
-        cout<<"-------------------"<<endl;
+        cout<<"----------------------------------"<<endl;
         cout<<"1) AGREGAR JUGADOR"<<endl;
         cout<<"2) LISTAR JUGADOR POR DNI" <<endl;
         cout<<"3) LISTAR TODOS LOS JUGADORES"<<endl;
         cout<<"4) MODIFICAR FECHA DE INSCRIPCION"<<endl;
         cout<<"5) ELIMINAR REGISTRO DE JUGADOR"<<endl;
-        cout<<"----------------------------"<<endl;
+        cout<<"----------------------------------"<<endl;
         cout<<"0) VOLVER AL MENU PRINCIPAL"<<endl;
         cout<<"OPCION: ";
         cin>>opc;
@@ -39,7 +39,8 @@ void subMenuJugadores(){
                 break;
             case 5: eliminarRegistroJugador();
                 break;
-            case 0:return;
+            case 0:cout<<"Volviendo al menu principal..."<<endl;
+                return;
                 break;
             default:cout<<"OPCION INCORRECTA"<<endl;
                 break;
@@ -68,7 +69,7 @@ void agregarRegistroJugador(){
         }
     }
     else{
-        cout<<"YA EXISTE UN REGISTRO CON ESE DNI" <<endl;
+        cout<<"YA EXISTE UN REGISTRO CON ESE DNI."<<endl;
     }
 }
 
@@ -129,7 +130,7 @@ bool eliminarRegistroJugador(){
     cout<<"INGRESE EL DNI A BORRAR: ";
     cin>>dni;
 
-    pos=archi.buscarRegistro(dni); //buscarRegistro(int ) devuelve la pos del registro en el archivo.
+    pos=archi.buscarRegistro(dni); //buscarRegistro(int) devuelve la pos del registro en el archivo.
 
     if(pos==-1){
         cout<<"NO EXISTE EL REGISTRO CON ESE CODIGO"<<endl;

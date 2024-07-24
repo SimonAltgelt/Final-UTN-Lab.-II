@@ -18,7 +18,7 @@ void subMenuDeportes(){
     while(true){
         system("cls");
         cout<<"MENU DEPORTES"<<endl;
-        cout<<"-----------------"<<endl;
+        cout<<"--------------------------"<<endl;
         cout<<"1) AGREGAR DEPORTE"<<endl;
         cout<<"2) LISTAR DEPORTE POR ID"<<endl;
         cout<<"3) LISTAR TODO"<<endl;
@@ -40,7 +40,8 @@ void subMenuDeportes(){
                 break;
             case 5: eliminarRegistroDeporte();
                 break;
-            case 0:return;
+            case 0:cout<<"Volviendo al menu principal..."<<endl;
+                return;
                 break;
             default:cout<<"OPCION INCORRECTA"<<endl;
                 break;
@@ -95,7 +96,6 @@ void listarTodo(){
 
 void modificarAnioOrigen(){
     int ID;
-    int nuevoAnio;
     cout<<"INGRESE EL ID DEL DEPORTE CUYO ANIO DESEA MODIFICAR :";
     cin>>ID;
     ArchivoDeporte archi("Deportes.dat");
@@ -105,6 +105,7 @@ void modificarAnioOrigen(){
     }
     else{
         Deporte reg=archi.leerRegistro(pos);
+        int nuevoAnio;
         cout<<"INGRESE EL NUEVO ANIO DE INSCRIPCION: ";
         cin>>nuevoAnio;
         reg.setAnio(nuevoAnio);
